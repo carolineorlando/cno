@@ -1,0 +1,15 @@
+.social {
+  float: right;
+}
+.social-icon {
+  svg {
+    height: 16px;
+    width: 16px;
+  }
+  &:hover {
+    text-decoration: none;
+    svg {
+      fill: $gray;
+    }
+  }
+}
