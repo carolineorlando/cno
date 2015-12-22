@@ -6,7 +6,7 @@ title: Christian Orlando
 email: cnorlando@gmail.com
 description: Multimedia Actor
 url: "http://christianorlando.com"
-baseurl: /cno
+# baseurl: /cno
 markdown: kramdown
 
 instagram-username: christianorlando
