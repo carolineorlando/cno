@@ -16,6 +16,3 @@ twitter-username: mobilebugle
 ## SETUP REDIRECT FROM PROJECT PAGE TO CUSTOM DOMAIN
 gems:
   - jekyll-redirect-from
-
-redirect_from:
-  - "carolineorlando.github.io/cno"
