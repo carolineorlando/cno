@@ -12,3 +12,7 @@ markdown: kramdown
 instagram-username: christianorlando
 tumblr-username: cnorlando
 twitter-username: mobilebugle
+
+## SETUP REDIRECT FROM PROJECT PAGE TO CUSTOM DOMAIN
+gems:
+  - jekyll-redirect-from
