@@ -12,3 +12,6 @@ markdown: kramdown
 instagram-username: christianorlando
 tumblr-username: cnorlando
 twitter-username: mobilebugle
+
+gems:
+  - jekyll-redirect-from
