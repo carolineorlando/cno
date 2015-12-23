@@ -16,3 +16,6 @@ twitter-username: mobilebugle
 
 github-url: carolineorlando.github.io
 github-repo-url: carolineorlando.github.io/cno
+
+sass:
+  style: compressed
