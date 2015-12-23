@@ -8,9 +8,11 @@ description: Multimedia Actor
 url: "http://christianorlando.com"
 # baseurl: /cno
 markdown: kramdown
+permalink: none
 
 instagram-username: christianorlando
 tumblr-username: cnorlando
 twitter-username: mobilebugle
 
-permalink: none
+github-url: carolineorlando.github.io
+github-repo-url: carolineorlando.github.io/cno
