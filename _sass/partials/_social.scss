@@ -2,9 +2,13 @@
   float: right;
 }
 .social-icon {
+  margin: 0 5px;
+  &:last-of-type {
+    margin-right: 0;
+  }
   svg {
-    height: 16px;
-    width: 16px;
+    height: 18px;
+    width: 18px;
   }
   &:hover {
     text-decoration: none;
