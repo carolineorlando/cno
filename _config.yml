@@ -4,7 +4,7 @@
 
 title: Christian Orlando
 email: cnorlando@gmail.com
-description: Multimedia Actor
+description: Multimedia Artist
 url: "http://christianorlando.com"
 # baseurl: /cno
 markdown: kramdown
@@ -13,6 +13,7 @@ permalink: none
 instagram-username: christianorlando
 tumblr-username: cnorlando
 twitter-username: mobilebugle
+vimeo-username: user19767938
 
 github-url: http://carolineorlando.github.io
 github-repo-url: carolineorlando.github.io/cno

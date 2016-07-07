@@ -23,6 +23,12 @@ img {
 
 figure > img {
   display: block;
+  max-height: 400px;
+  margin: auto;
+  @media( min-width: $breakpoint-small ) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 figcaption {

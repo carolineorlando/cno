@@ -3,6 +3,14 @@
   <div class="wrapper">
     <p>{{ site.title }} &copy; 2016 &mdash; all rights reserved</p>
     <div class="social">
+     {% if site.instagram-username %}
+        {% include social/instagram.html %}
+      {% endif %}
+
+      {% if site.vimeo-username %}
+        {% include social/vimeo.html %}
+      {% endif %}
+      
       {% if site.facebook-username %}
         {% include social/facebook.html %}
       {% endif %}
@@ -13,10 +21,6 @@
 
       {% if site.tumblr-username %}
         {% include social/tumblr.html %}
-      {% endif %}
-
-      {% if site.instagram-username %}
-        {% include social/instagram.html %}
       {% endif %}
     </div>
   </div>
