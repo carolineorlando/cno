@@ -1,0 +1,27 @@
+.instagram-feed {
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid white;
+	> .instagram {
+		width: 20%;
+		border: 1px solid white;
+		box-sizing: border-box;
+		transition: all 200ms ease-in-out;
+		&:hover {
+			img {
+				filter: grayscale(0%);
+			}
+		}
+		img {
+			display: block;
+			transition: all 200ms ease-in-out;
+			filter: grayscale(100%);
+		}
+		@include media-query($breakpoint-medium) {
+			width: 25%;
+		}
+		@include media-query($breakpoint-small) {
+			width: 50%;
+		}
+	}
+}

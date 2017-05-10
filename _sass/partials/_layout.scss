@@ -52,10 +52,11 @@
 
 .page {
   &__image {
-    width: 100%;
+    // width: calc(100%/3);
     height: auto;
   }
   &__content {
+    // width: calc(100%/3*2);
     article {
       margin-top: $gutter;
       * {
@@ -68,6 +69,8 @@
 }
 
 .wrapper {
+  // display: flex;
+  // flex-wrap: wrap;
   max-width: -webkit-calc(#{$content-width} - (#{$gutter} * 2));
   max-width: calc(#{$content-width} - (#{$gutter} * 2));
   margin-right: auto;
