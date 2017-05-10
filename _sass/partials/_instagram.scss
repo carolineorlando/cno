@@ -7,15 +7,21 @@
 		border: 1px solid white;
 		box-sizing: border-box;
 		transition: all 200ms ease-in-out;
+		-webkit-transition: all 200ms ease-in-out;
+		-moz-transition: all 200ms ease-in-out;
 		&:hover {
 			img {
 				filter: grayscale(0%);
+				-webkit-filter: grayscale(100%);
 			}
 		}
 		img {
 			display: block;
 			transition: all 200ms ease-in-out;
+			-webkit-transition: all 200ms ease-in-out;
+			-moz-transition: all 200ms ease-in-out;
 			filter: grayscale(100%);
+			-webkit-filter: grayscale(100%);
 		}
 		@include media-query($breakpoint-medium) {
 			width: 25%;
