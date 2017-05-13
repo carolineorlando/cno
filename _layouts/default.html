@@ -21,7 +21,7 @@
     {% include footer.html %}
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script>
-      $(function() {
+      $(function(){
           $.ajax({
               type: 'GET',
               dataType: 'jsonp',
@@ -29,11 +29,17 @@
               url: 'https://api.instagram.com/v1/users/self/media/recent/?access_token=227061426.bd2af88.fc429e20b2674869b34d37d3b319e169',
               success: function(data) {
                   for(var i = 0; i < 20; i++) {
-                      $('.instagram-feed').append('<a class="instagram" target="_blank" href="' + data.data[i].link + '"><img src="' + data.data[i].images.low_resolution.url+ '"></a>');
+                      if(data.data[i].images.low_resolution.height != data.data[i].images.low_resolution.width){
+                        var classes = 'instagram not-square';
+                      } else {
+                        var classes = 'instagram';
+                      }
+                      var img = '<img src="' + data.data[i].images.low_resolution.url+ '">';
+                      $('.instagram-feed').append('<a class="'+classes+'" target="_blank" href="' + data.data[i].link + '">'+img+'</a>');
                   }
               }
           });
-      })();
+      });
     </script>
   </body>
 

@@ -9,6 +9,14 @@
 		transition: all 200ms ease-in-out;
 		-webkit-transition: all 200ms ease-in-out;
 		-moz-transition: all 200ms ease-in-out;
+		&.not-square {
+			position: relative;
+			img {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
 		&:hover {
 			img {
 				filter: grayscale(0%);
